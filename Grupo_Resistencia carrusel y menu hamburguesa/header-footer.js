@@ -14,7 +14,7 @@ function headerFooter (){
     <ul>
         <li><a href="index.html">Inicio</a></li>
         <li><a href="#">Compra mayorista</a></li>
-        <li><a href="#">Compra minorista</a></li>
+        <li><a href="Manuales.html">Manuales</a></li>
         <li><a href="contacto.html"> Contacto</a></li>
     </ul>
     

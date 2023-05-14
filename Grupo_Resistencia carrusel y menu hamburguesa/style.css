@@ -30,17 +30,19 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
 }
-    /* GDT ajuste el logo para mantener un tamaño apropiado para el uso de menu hamburguesa */
-.logo{
+
+/* GDT ajuste el logo para mantener un tamaño apropiado para el uso de menu hamburguesa */
+.logo {
     width: 300px;
 }
 
-.logo a img{
+.logo a img {
     width: 100%;
 }
 
-    /* GDT Escondemos los botones */
-.boton-abierto, .boton-cerrado{
+/* GDT Escondemos los botones */
+.boton-abierto,
+.boton-cerrado {
     display: none;
 }
 
@@ -172,7 +174,7 @@ input[type="radio"] {
     width: auto;
 }
 
-.form-buttons{
+.form-buttons {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
@@ -180,11 +182,13 @@ input[type="radio"] {
 
 /* Media query para pantallas chicas (tables, teléfonos)*/
 @media only screen and (max-width: 768px) {
-    .logo{
+    .logo {
         width: 200px;
         padding: 20px 0;
     }
-    .boton-abierto, .boton-cerrado{
+
+    .boton-abierto,
+    .boton-cerrado {
         display: block;
         border: 0;
         background-color: transparent;
@@ -192,16 +196,17 @@ input[type="radio"] {
         font-size: 25px;
     }
 
-    .boton-cerrado{
+    .boton-cerrado {
         margin-left: 150px;
     }
-    .boton-abierto{
+
+    .boton-abierto {
         margin: auto 0 auto 110px;
         padding-bottom: 10px;
         color: black;
     }
 
-    .nav-container{
+    .nav-container {
         opacity: 0;
         visibility: hidden;
         display: flex;
@@ -213,20 +218,20 @@ input[type="radio"] {
         bottom: 0;
         background-color: white;
         padding: 2rem;
-        box-shadow: 0 0 100vmax rgba(0,0,0,0.5);
+        box-shadow: 0 0 100vmax rgba(0, 0, 0, 0.5);
         transition: ease-out .2s all;
     }
 
-    .nav-container.visible{
+    .nav-container.visible {
         opacity: 1;
         visibility: visible;
     }
 
-    .nav-container ul{
+    .nav-container ul {
         display: block;
     }
 
-    .nav-container ul li{
+    .nav-container ul li {
         padding-top: 30px;
         text-align: start;
     }
@@ -244,9 +249,9 @@ input[type="radio"] {
         order: 2;
     }
 
-    .form-buttons{
+    .form-buttons {
         display: grid;
-        grid-template-columns: 1fr ;
+        grid-template-columns: 1fr;
     }
 
 }
@@ -259,53 +264,110 @@ input[type="radio"] {
     padding: 14px;
     text-align: center;
 }
+
 .titulo1 {
     margin: 5px;
     padding: 5px;
     text-align: left;
 }
 
-.inicio main{
+.inicio main {
     margin: 0;
     padding: 0;
 }
 
 .slider-frame {
-	width: 1280px;
-    height: auto;
-	margin:50px auto 0;
-	overflow: hidden;
+    /* GDT: Comenté el ancho porque no es responsive o adaptativo. En dispositivos chicos queda oculta y en dispositivos muy grandes queda con muhco padding.*/
+    /* width: 1280px; */
+    width: auto;
+    /* GDT: No me gusta mucho que esté auto cuando las imágenes tienen distinto alto porque al ir cambiando de imagen, el resto de la página va "cambiando" de alto. 
+    Tal vez si las centranos no se note tanto, pero en principio le pongo un alto. */
+    /* height: auto; */
+    height: 600px;
+    /* GDT: Puse el margen en 10 como en la página de contacto. Si lo cambiamos en 50, 10 o 0, hay que hacerlo también ahí. */
+    /* margin: 50px auto 0; */
+    margin:10px auto 0;
+    overflow: hidden;
 }
 
 .slider-frame ul {
-	display: flex;
-	padding: 0;
-	width: 500%;
-	animation: slide 15s infinite alternate ease-in-out;
+    display: flex;
+    padding: 0;
+    width: 500%;
+    animation: slide 15s infinite alternate ease-in-out;
 }
 
 .slider-frame li {
-	width: 100%;
-	list-style: none;
+    width: 100%;
+    list-style: none;
 }
 
 .slider-frame img {
-	width: 100%;
+    width: 100%;
 }
 
 @keyframes slide {
-	0% {margin-left: 0;}
-	20% {margin-left: 0;}
-	
-	25% {margin-left: -100%;}
-	40% {margin-left: -100%;}
-	
-	45% {margin-left: -200%;}
-	60% {margin-left: -200%;}
-	
-	65% {margin-left: -300%;}
-	80% {margin-left: -300%;}
+    0% {
+        margin-left: 0;
+    }
 
-    85% {margin-left: -400%;}
-	100% {margin-left: -400%;}
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    40% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -200%;
+    }
+
+    60% {
+        margin-left: -200%;
+    }
+
+    65% {
+        margin-left: -300%;
+    }
+
+    80% {
+        margin-left: -300%;
+    }
+
+    85% {
+        margin-left: -400%;
+    }
+
+    100% {
+        margin-left: -400%;
+    }
+}
+
+
+/* ------------ Manuales --------------*/
+
+.imgcontainer {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.imagesitem img {
+    width: 200px;
+    transition: 0.2 ease-in;
+    margin: 5px 10px;
+    
+}
+
+.imagesitem:hover {
+    filter: opacity(0.5);
+    transform: scale(1.05);
 }
