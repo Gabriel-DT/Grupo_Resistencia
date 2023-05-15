@@ -5,85 +5,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-
-    <!-- Link a hoja de estilo y fuente -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-</head>
+    <title>Contacto</title>
+    <script src="https://kit.fontawesome.com/7ddcef2803.js" crossorigin="anonymous"></script>
+
+    <!-- Link a hoja de estilo y fuente -->
+    
+</head>    
 
 <body>
-
-    <body>
-        <header id="idheader">
-        </header>
-
-        <main>
-
-            <div class="titulo">
-                <h2>Contacto</h2>
+    <header id="idheader">
+    </header>
+    <main>
+        <div class="titulo">
+            <h2>Contacto</h2>
+        </div>
+        <div class="contacto">
+            <!-- --------------- Iframe --------------- -->
+            <div class="iframe">
+                <!-- GDT Definir y cambiar la dirección del Iframe. -->
+                <div style="width: 100%"><iframe scrolling="no" marginheight="0" marginwidth="0"
+                        src="https://maps.google.com/maps?hl=en&amp;q=Obelisco,%20Buenos%20Aires,%20Argentina+(Oficina%20central)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                        width="100%" height="500" frameborder="0"></iframe></div>
             </div>
+            <!-- --------------- Formulario --------------- -->
+            <!-- GDT Ajustar las preguntas y agregar validación. -->
+            <div class="formulario">
+                <form action="" method="" target="_blank">
+                    <div class="form">
+                        <label for="fnombre">Apellido y nombre</label>
+                        <input id=fnombre type="text" class="formu-input" name="fnombre"
+                            placeholder="Ingrese su apellido y nombre">
+                    </div>
 
-            <div class="contacto">
+                    <div class="form">
+                        <label for="femail">Email</label>
+                        <input id=femail type="text" class="formu-input" name="femail"
+                            placeholder="Ingrese su email" required>
+                    </div>
 
-                <!-- --------------- Iframe --------------- -->
-                <div class="iframe">
+                    <div class="form">
+                        <label for="ftelefono">Teléfono</label>
+                        <input id=ftelefono type="text" class="formu-input" name="ftelefono"
+                            placeholder="Ingrese su teléfono">
+                    </div>
 
-                    <!-- GDT Definir y cambiar la dirección del Iframe. -->
-                    <div style="width: 100%"><iframe scrolling="no" marginheight="0" marginwidth="0"
-                            src="https://maps.google.com/maps?hl=en&amp;q=Obelisco,%20Buenos%20Aires,%20Argentina+(Oficina%20central)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-                            width="100%" height="500" frameborder="0"></iframe></div>
-                </div>
+                    <div class="form">
+                        <label>Ingrese el motivo del contacto</label>
+                    </div>
 
-                <!-- --------------- Formulario --------------- -->
-                <!-- GDT Ajustar las preguntas y agregar validación. -->
-                <div class="formulario">
-                    <form action="" method="" target="_blank">
-                        <div class="form">
-                            <label for="fnombre">Apellido y nombre</label>
-                            <input id=fnombre type="text" class="formu-input" name="fnombre"
-                                placeholder="Ingrese su apellido y nombre">
-                        </div>
+                    <div class="form-check">
+                        <input id=finformacion type="radio" class="formu-input" name="fmotivo" value="Presupuesto">
+                        <label for="finformacion">Solicitar presupuesto</label>
+                    </div>
 
-                        <div class="form">
-                            <label for="femail">Email</label>
-                            <input id=femail type="text" class="formu-input" name="femail"
-                                placeholder="Ingrese su email" required>
-                        </div>
+                    <div class="form-check">
+                        <input id=fotros type="radio" class="formu-input" name="fmotivo" value="Informacion">
+                        <label for="fotros">Solicitar más información</label>
+                    </div>
 
-                        <div class="form">
-                            <label for="ftelefono">Teléfono</label>
-                            <input id=ftelefono type="text" class="formu-input" name="ftelefono"
-                                placeholder="Ingrese su teléfono">
-                        </div>
-
-                        <div class="form">
-                            <label>Ingrese el motivo del contacto</label>
-                        </div>
-
-                        <div class="form-check">
-                            <input id=finformacion type="radio" class="formu-input" name="fmotivo" value="Presupuesto">
-                            <label for="finformacion">Solicitar presupuesto</label>
-                        </div>
-
-                        <div class="form-check">
-                            <input id=fotros type="radio" class="formu-input" name="fmotivo" value="Informacion">
-                            <label for="fotros">Solicitar más información</label>
-                        </div>
-
-                        <div class="form-buttons">
-                            <input type="reset" value="Borrar">
-                            <input type="submit" value="Enviar">
-                        </div>
-                </div>
+                    <div class="form-buttons">
+                        <input type="reset" value="Borrar">
+                        <input type="submit" value="Enviar">
+                    </div>
             </div>
+        </div>
+    </main>
+        
 
-            <footer id="idfooter">
-            </footer>
+    <footer id="idfooter">
 
-            <!-- Scrit para cargar header y footer -->
-            <script src="header-footer.js"></script>
+    </footer>
+    <!-- Scrit para cargar header y footer -->
+    <script src="header-footer.js"></script>
+            
 
-    </body>
-
+</body>
 </html>
