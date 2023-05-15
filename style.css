@@ -262,7 +262,7 @@ input[type="radio"] {
 
 /* ------------------------clases "INDEX INICIO"----------------------------------- */
 
-.titulito {
+.titulito, h1 {
     margin: 35px;
     padding: 45px;
     text-align: center;
@@ -390,3 +390,37 @@ input[type="radio"] {
     padding: 5px;
     background-color: rgb(255, 255, 255);
 }
+
+img{
+    max-width: 100%;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:2rem;
+}
+
+.producto{
+    background-color:#f37923;
+}
+
+.producto__imagen{
+    width: 100%;
+}
+
+.producto__nombre{
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    
+}
+
+.producto__precio{
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px black, 0 0 1em var(--varcol1), 0 0 0.2em var(--varcol1);
+   color: rgb(255, 255, 255);
+}
+

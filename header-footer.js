@@ -13,7 +13,7 @@ function headerFooter (){
     <button id="boton-cerrado" class="boton-cerrado"><i class="fa-sharp fa-regular fa-xmark"></i></button>
     <ul>
         <li><a href="index.html">Inicio</a></li>
-        <li><a href="#">Compra mayorista</a></li>
+        <li><a href="Ventas.html">Ventas</a></li>
         <li><a href="Manuales.html">Manuales</a></li>
         <li><a href="contacto.html"> Contacto</a></li>
     </ul>
