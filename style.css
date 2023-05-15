@@ -1,7 +1,11 @@
 /* GDT Definir paleta de colores, logos, etc. */
 :root {
-    --varcol1: rgb(138, 159, 244);
-    --varcol2: rgb(0, 180, 255);
+    /* --varcol1: rgb(138, 159, 244); */
+    --varcol1: rgb(243,121,35);
+    /* --varcol2: rgb(0, 180, 255); */
+    --varcol2: rgb(240, 100, 0);
+    --varcolfondo: rgb(138, 159, 244, 0.6);
+
 }
 
 /* GDT Estilo general */
@@ -85,7 +89,7 @@ nav ul li a:hover {
 }
 
 main {
-    background-color: rgb(138, 159, 244, 0.6);
+    background-color: var(--varcolfondo);
 }
 
 /* GDT Media query para pantallas chicas (laptops, tables, teléfonos)
@@ -263,7 +267,7 @@ input[type="radio"] {
     padding: 45px;
     text-align: center;
     font-size: 35px;
-    text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+    text-shadow: 1px 1px 2px black, 0 0 1em var(--varcol1), 0 0 0.2em var(--varcol1);
    color: rgb(255, 255, 255);
    
 }
@@ -275,7 +279,7 @@ input[type="radio"] {
     margin: 5px;
     padding: 5px;
     text-align: center;
-    text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
+    text-shadow: 1px 1px 2px black, 0 0 1em var(--varcol1), 0 0 0.2em var(--varcol1);
    color: rgb(193, 193, 193);
    
 }
