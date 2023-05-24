@@ -291,8 +291,9 @@ p.titulito {
 }
 
 .slider-frame {
+    max-height: 500px;
+    height: 100%;
     width: auto;
-    height: 600px;
     margin: 10px auto 0;
     overflow: hidden;
 }
