@@ -1,4 +1,4 @@
-function headerFooter (){
+function headerFooter() {
   // ----------- Header -----------
 
   document.getElementById("idheader").innerHTML =
@@ -80,18 +80,18 @@ function headerFooter (){
   `;
 }
 
-function menuDesplegable(){
-    const abrirMenu = document.querySelector("#boton-abierto")
-    const cerrarMenu = document.querySelector("#boton-cerrado")
-    const nav = document.querySelector("#nav")
+function menuDesplegable() {
+  const abrirMenu = document.querySelector("#boton-abierto")
+  const cerrarMenu = document.querySelector("#boton-cerrado")
+  const nav = document.querySelector("#nav")
 
-    abrirMenu.addEventListener("click", () => {
-        nav.classList.add("visible")
-    })
+  abrirMenu.addEventListener("click", () => {
+    nav.classList.add("visible")
+  })
 
-    cerrarMenu.addEventListener("click", () => {
-        nav.classList.remove("visible")
-    })
+  cerrarMenu.addEventListener("click", () => {
+    nav.classList.remove("visible")
+  })
 }
 headerFooter();
 menuDesplegable();
